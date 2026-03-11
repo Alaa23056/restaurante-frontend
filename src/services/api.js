@@ -1,7 +1,15 @@
 const ENV_URL = import.meta.env.VITE_API_URL;
-const BASE_URLS = ENV_URL
-  ? [ENV_URL, "/api"]
-  : ["/api", "http://localhost:4000", "https://restaurants.arasaac.org"];
+const normalizeBase = value => (value ? value.replace(/\/+$/, "") : value);
+const envBase = normalizeBase(ENV_URL);
+
+const BASE_URLS = [
+  envBase,
+  envBase ? `${envBase}/api` : null,
+  "/api",
+  "http://localhost:4000",
+  "https://restaurants.arasaac.org",
+  "https://restaurants.arasaac.org/api",
+].filter(Boolean);
 
 async function request(path) {
   let lastError;

@@ -17,6 +17,7 @@ restaurantes, platos, pedidos y clientes asociados.
 
 ## Backend esperado
 - Repo: `restaurante-backend`
+- URL: `https://github.com/Alaa23056/restaurante-backend.git`
 - Arranque: `docker compose up -d`
 - API base: `http://localhost:4000`
 - Variable opcional: `VITE_API_URL`

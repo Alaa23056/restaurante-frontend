@@ -25,7 +25,7 @@ restaurantes, platos, pedidos y clientes asociados.
 ## Despliegue (GitHub Pages)
 1. Ejecutar `npm run deploy` (genera `dist/` y publica en `gh-pages`).
 2. Activar GitHub Pages: Source = `gh-pages` / root.
-3. URL final: completar aqui cuando se publique.
+3. URL final: `https://alaa23056.github.io/restaurante-frontend/`.
 
 ## Estructura clave
 - `src/pages/Home.jsx`: listado de restaurantes.

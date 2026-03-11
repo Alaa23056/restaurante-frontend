@@ -21,6 +21,7 @@ restaurantes, platos, pedidos y clientes asociados.
 - Arranque: `docker compose up -d`
 - API base: `http://localhost:4000`
 - Variable opcional: `VITE_API_URL`
+- Produccion: `https://restaurants.arasaac.org`
 
 ## Despliegue (GitHub Pages)
 1. Ejecutar `npm run deploy` (genera `dist/` y publica en `gh-pages`).
